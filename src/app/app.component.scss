@@ -1,0 +1,42 @@
+@import './../styles.scss';
+
+mat-toolbar {
+    background-color: $primary-color;
+    color: $color-white;
+}
+
+mat-drawer {
+    width: 240px;
+    background-color: $secondary-light;
+}
+
+mat-drawer-container {
+    height: 100%;
+    background-color: $secondary-dark;
+}
+
+mat-toolbar-row {
+    @include display($jc: flex-start);
+    height: 80px;
+}
+
+.top-text {
+    height: 80px;
+    @include display($jc:flex-start);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    >li {
+        height: 64px;
+        font-size: 16px;
+        padding-left: 16px;
+        @include display($jc: space-between);
+        &:hover {
+            cursor: pointer;
+            background-color: $secondary-dark;
+        }
+    }
+}

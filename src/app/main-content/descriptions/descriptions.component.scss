@@ -1,0 +1,59 @@
+@import './../../../styles.scss';
+
+mat-card {
+    margin: 64px;
+    padding: 0 16px;
+}
+
+mat-card-content {
+    padding: 0;
+}
+
+mat-card-header {
+    font-size: 24px;
+    margin: 0;
+    // padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    tr {
+        th {
+            text-align: left;
+            font-weight: 400;
+            padding-bottom: 20px;
+            padding-left: 16px;
+        }
+        td {
+            padding-bottom: 20px;
+            padding-left: 16px;
+            // display: flex;
+            // align-items: flex-start;
+            // // justify-content: center;
+            // flex-direction: row;
+            &:first-child {
+                display:flex
+            }
+        }
+    }
+}
+
+.description-box {
+    >.row-box{
+        @include display($jc: flex-start);
+        >.column-box-left {
+            // background-color: orange;
+            width: 30%;
+            @include display($jc: flex-start);
+            align-self: baseline;
+
+        }
+        >.column-box-right {
+            // background-color: lightblue;
+            width: 70%;
+            @include display($ai: flex-start);
+            flex-direction: column;
+            
+        }
+    }
+}

@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$primary-color: #0091D2;
+$font-color-one: white;
+$color-white: white;
+$secondary-light: #424242;
+$secondary-dark: #303030;
+
+
+@mixin display($f: flex, $jc:center, $ai:center) {
+    display: $f;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
+h1 {
+    font-size: 32px;
+    color: $font-color-one;
+    font-weight: 600;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: $font-color-one;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    font-size: 14px;
+    color: $font-color-one;
+    margin: 0;
+    margin-top: -8px;
+}
+
+p {
+    font-size: 14px;
+    color: $font-color-one;
+    margin: 0
+}
+
+.desk-max-width {
+    max-width: 1024px;
+    width: 100%;
+    // background-color: lightgray;
+}
+
+.ml-16 {
+    margin-left: 16px
+}
+
+.mb-8 {
+    margin-bottom: 8px
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.p-16 {
+    padding: 16px;
+}
+
+.p-32 {
+    padding: 32px
+}
+
+.pl-16 {
+    padding-left: 16px;
+}
+
+.pb-8 {
+    padding-bottom: 8px;
+}
+
+.f-size-16 {
+    font-size: 16px;
+    font-weight: 500;
+}
